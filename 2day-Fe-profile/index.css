@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+:root{
+    --pink-color:#f2726a;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        font-family: sans-serif;
+}
+body{
+    background: linear-gradient(45deg, #00853e, #50c878);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+.card{
+    height: 400px;
+    width: 300px;
+    background-color: #242628;
+    text-align: center;  
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card__img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 4px solid var(--pink-color);
+    cursor: pointer;
+    overflow: hidden;
+    transform: translateY(25px);
+    transition: 0.25s;
+}
+.card__img:hover{
+    width: 100%;
+    height: 100%;
+    border: unset;
+    border-radius: unset;
+    transform: unset;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.card h2 {
+    margin-top: 40px;
+}
+.card p{
+    color: var(--pink-color);
+    margin: 10px 0;
+}
+.card__social{
+    margin: 25px 0;
+}
+.card__social a{
+    text-decoration: none;
+    color: #ffff;
+    margin: 25px 20px;
+    font-size: 20px;
+}
+.card__social a:hover{
+    color: var(--pink-color);
+}
+button{
+    color: #fff;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid var(--pink-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+button:hover{
+    background-color: var(--pink-color);
+}
