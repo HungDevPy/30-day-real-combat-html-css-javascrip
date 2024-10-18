@@ -1,0 +1,256 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    overflow: hidden; /* Ngăn cuộn */
+    height: 100vh;    /* Chiều cao 100% màn hình */
+}
+.main{
+    height: 100vh;;
+    background: url('./img/bg-weather.png') lightgray 50% / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 37px 0 85px 116px;
+}
+.information{
+    display: flex;
+    align-items: center;
+    height: 168px;
+    flex-direction: row;
+    gap: 10px;
+}
+.information h2{
+    font-size: 143px;
+    font-weight: 400;
+}
+.information .name{
+    text-align: center;
+    width: 300px;
+}
+.information .city{
+    font-size:  60px;
+    font-weight: 400;
+}
+.information .day{
+    font-size:  18px;
+    font-weight: 400;
+}
+.weather{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 526px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(9.5px);  
+    padding: 40px 120px 0 35px ;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+.sreach-mb,
+.weather .sreach{
+    display: flex;
+    border-bottom: 1px solid #fff;
+    justify-content: space-between;
+    margin-bottom: 41px;
+}
+.sreach-mb{
+    visibility: hidden;
+}
+input{
+    border: none;
+    font-size: 20px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 13px;
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+}
+input:focus{
+    outline: none;
+}
+button{
+    width: 28px;
+    height: 28px;
+    background-color: transparent;
+    border: none;
+    font-size: 28px;
+    color: #fff;
+}
+span{
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 52px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom:86px;
+}
+.details span{
+    font-size: 18px;
+    margin-bottom: unset;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.temp{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.70);
+}
+.temp-right{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 26px;
+}
+#span1 {
+    border-bottom: 1px solid #FFF;
+}
+.forecast{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.forecast-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    width: 354px;
+    height: 58px;
+}
+.forecast-left{
+    display: flex;
+    align-items: center;
+}
+.forecast-left img{
+    margin-right: 35px;
+}
+p{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.70);
+}
+/* Styles for phones (up to 600px) */
+@media screen and (max-width: 600px) {
+    .main {
+        padding: 27px 39px;
+        background: url('./img/bg-weather\ \(2\).png')lightgray 50% / cover no-repeat;
+    }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 210px;
+    }
+    input{
+        margin-bottom: unset;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .sreach-mb{ 
+        visibility: visible;
+        font-size: 18px;
+        margin-bottom: unset;
+    }
+    button{
+        width: 22px;
+        height: unset;
+    }
+    .information{
+        position: absolute;
+        top: 267px;
+        gap: unset;
+        margin-bottom: 44px;
+    }
+    .information h2{
+        font-size: 120px;
+        font-weight: 400;
+    }
+    .information .name{
+        text-align: unset;
+        width: unset;
+    }
+    .information .city{
+        font-size: 48px;
+    }
+    .weather{
+        top:456px;
+        width: 100%;
+        text-align: center;
+        padding: 55px 45px;
+    }
+    .weather .sreach{
+        display: none;
+    }
+    .weather::-webkit-scrollbar {
+        display: none; /* Hides the scrollbar */
+    }
+}
+
+/* Styles for tablets (between 601px and 900px) */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .main {
+        padding: 27px 39px;
+        background: url('./img/bg-weather\ \(1\).png')lightgray 50% / cover no-repeat;
+    }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 210px;
+    }
+    input{
+        margin-bottom: unset;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .sreach-mb{ 
+        visibility: visible;
+        font-size: 18px;
+        margin-bottom: unset;
+    }
+    button{
+        width: 22px;
+        height: unset;
+    }
+    .information{
+        position: absolute;
+        top: 267px;
+        gap: unset;
+        margin-bottom: 44px;
+    }
+    .information h2{
+        font-size: 120px;
+        font-weight: 400;
+    }
+    .information .name{
+        text-align: unset;
+        width: unset;
+    }
+    .information .city{
+        font-size: 48px;
+    }
+    .weather{
+        top:456px;
+        width: 100%;
+        text-align: center;
+        padding: 107px 205px 41px;
+    }
+    .weather .sreach{
+        display: none;
+    }
+    .weather::-webkit-scrollbar {
+        display: none; /* Hides the scrollbar */
+    }
+}

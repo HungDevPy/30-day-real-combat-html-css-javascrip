@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather One Day</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="logo">
+            <img src="./img/logo.svg" alt="logo">
+            <div class="sreach-mb">
+                <input type="text" placeholder="Search Location..." class="search-input">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <div class="information">
+            <h2>16°</h2>
+            <div class="name">
+                <h3 class="city">London</h3>
+                <p class="day">06:09 - Monday, 9 Sep ‘23</p>
+            </div>
+            <div class="wind">
+                <img src="./img/outline.svg" alt="">
+            </div>
+        </div>
+        <div class="weather">
+            <div class="sreach">
+                <input type="text" placeholder="Search Location..." class="search-input">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <span>Weather Details...</span>
+            <div class="details">
+                <span>thunderstorm with light drizzle</span>
+                <div class="temp">
+                    <p>Temp max</p>
+                    <div class="temp-right max">
+                        <p>19</p>
+                        <img src="./img/vector.svg" alt="">
+                    </div>
+                </div>
+                <div class="temp">
+                    <p>Temp min</p>
+                    <div class="temp-right min">
+                        <p>15°</p>
+                        <img src="./img/vector-2.svg" alt="">
+                    </div>
+                </div>
+                <div class="temp">
+                    <p>Humadity</p>
+                    <div class="temp-right humadity">
+                        <p>58%</p>
+                        <img src="./img/outline-2.svg" alt="">
+                    </div>
+                </div>
+                <div class="temp">
+                    <p>Cloudy</p>
+                    <div class="temp-right cloudy">
+                        <p>86%</p>
+                        <img src="./img/outline-3.svg" alt="">
+                    </div>
+                </div>
+                <div class="temp">
+                    <p>Wind</p>
+                    <div class="temp-right wind">
+                        <p>5km/h</p>
+                        <img src="./img/outline-4.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <span id="span1"></span>
+            <span>Today’s Weather Forecast...</span>
+            <div class="forecast">
+                <div class="forecast-item">
+                    <div class="forecast-left">
+                        <img src="./img/snow.png" alt="">
+                        <div class="forecast-left-main">
+                            <p>12:00</p>
+                            <p>Snow</p>
+                        </div>
+                    </div>
+                    <p>16°</p>
+                </div>
+                <div class="forecast-item">
+                    <div class="forecast-left">
+                        <img src="./img/snow.png" alt="">
+                        <div class="forecast-left-main">
+                            <p>12:00</p>
+                            <p>Snow</p>
+                        </div>
+                    </div>
+                    <p>16°</p>
+                </div>
+                <div class="forecast-item">
+                    <div class="forecast-left">
+                        <img src="./img/snow.png" alt="">
+                        <div class="forecast-left-main">
+                            <p>12:00</p>
+                            <p>Snow</p>
+                        </div>
+                    </div>
+                    <p>16°</p>
+                </div>
+            </div>
+
+
+        </div>
+        <script src="main.js"></script>
+</body>
+
+</html>
